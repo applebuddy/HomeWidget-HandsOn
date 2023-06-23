@@ -5,9 +5,9 @@
 //  Created by Min Min on 2023/06/18.
 //
 
+import Intents
 import WidgetKit
 import SwiftUI
-import Intents
 
 // https://api.sampleapis.com/coffee/hot
 /// Sample Response

@@ -21,8 +21,20 @@
 		8875EAD52A3F3C880065FD7F /* HomeWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8875EAD42A3F3C880065FD7F /* HomeWidget.swift */; };
 		8875EAD82A3F3C890065FD7F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8875EAD72A3F3C890065FD7F /* Assets.xcassets */; };
 		8875EADA2A3F3C890065FD7F /* HomeWidget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 8875EAD62A3F3C880065FD7F /* HomeWidget.intentdefinition */; };
-		8875EADB2A3F3C890065FD7F /* HomeWidget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 8875EAD62A3F3C880065FD7F /* HomeWidget.intentdefinition */; };
 		8875EADE2A3F3C890065FD7F /* HomeWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 8875EAC92A3F3C880065FD7F /* HomeWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		887A1F792A4608B000DA0B05 /* LiveActivityClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 887A1F772A46086B00DA0B05 /* LiveActivityClient.swift */; };
+		887A1F7C2A46099100DA0B05 /* HomeWidget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 8875EAD62A3F3C880065FD7F /* HomeWidget.intentdefinition */; };
+		887A1F802A460A3300DA0B05 /* LiveActivityClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 887A1F772A46086B00DA0B05 /* LiveActivityClient.swift */; };
+		887A1F812A460A4500DA0B05 /* HomeWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8875EAD42A3F3C880065FD7F /* HomeWidget.swift */; };
+		887A1F822A460A4700DA0B05 /* HomeWidgetLiveActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8875EAD22A3F3C880065FD7F /* HomeWidgetLiveActivity.swift */; };
+		887A1F832A460AD900DA0B05 /* LiveActivityClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 887A1F772A46086B00DA0B05 /* LiveActivityClient.swift */; };
+		887A1F842A460AD900DA0B05 /* LiveActivityClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 887A1F772A46086B00DA0B05 /* LiveActivityClient.swift */; };
+		887A1F852A460ADE00DA0B05 /* HomeWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8875EAD42A3F3C880065FD7F /* HomeWidget.swift */; };
+		887A1F862A460ADE00DA0B05 /* HomeWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8875EAD42A3F3C880065FD7F /* HomeWidget.swift */; };
+		887A1F872A460AE100DA0B05 /* HomeWidgetLiveActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8875EAD22A3F3C880065FD7F /* HomeWidgetLiveActivity.swift */; };
+		887A1F882A460AE100DA0B05 /* HomeWidgetLiveActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8875EAD22A3F3C880065FD7F /* HomeWidgetLiveActivity.swift */; };
+		887A1F892A460AE400DA0B05 /* HomeWidget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 8875EAD62A3F3C880065FD7F /* HomeWidget.intentdefinition */; };
+		887A1F8A2A460AE400DA0B05 /* HomeWidget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 8875EAD62A3F3C880065FD7F /* HomeWidget.intentdefinition */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,6 +95,7 @@
 		8875EAD62A3F3C880065FD7F /* HomeWidget.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = HomeWidget.intentdefinition; sourceTree = "<group>"; };
 		8875EAD72A3F3C890065FD7F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8875EAD92A3F3C890065FD7F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		887A1F772A46086B00DA0B05 /* LiveActivityClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveActivityClient.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -193,6 +206,7 @@
 				8875EAD02A3F3C880065FD7F /* HomeWidgetBundle.swift */,
 				8875EAD22A3F3C880065FD7F /* HomeWidgetLiveActivity.swift */,
 				8875EAD42A3F3C880065FD7F /* HomeWidget.swift */,
+				887A1F772A46086B00DA0B05 /* LiveActivityClient.swift */,
 				8875EAD62A3F3C880065FD7F /* HomeWidget.intentdefinition */,
 				8875EAD72A3F3C890065FD7F /* Assets.xcassets */,
 				8875EAD92A3F3C890065FD7F /* Info.plist */,
@@ -361,9 +375,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				887A1F802A460A3300DA0B05 /* LiveActivityClient.swift in Sources */,
 				8875EA9E2A3F3B810065FD7F /* ContentView.swift in Sources */,
 				8875EA9C2A3F3B810065FD7F /* HomeWidgetExampleApp.swift in Sources */,
-				8875EADB2A3F3C890065FD7F /* HomeWidget.intentdefinition in Sources */,
+				887A1F7C2A46099100DA0B05 /* HomeWidget.intentdefinition in Sources */,
+				887A1F812A460A4500DA0B05 /* HomeWidget.swift in Sources */,
+				887A1F822A460A4700DA0B05 /* HomeWidgetLiveActivity.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -371,6 +388,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				887A1F862A460ADE00DA0B05 /* HomeWidget.swift in Sources */,
+				887A1F882A460AE100DA0B05 /* HomeWidgetLiveActivity.swift in Sources */,
+				887A1F842A460AD900DA0B05 /* LiveActivityClient.swift in Sources */,
+				887A1F8A2A460AE400DA0B05 /* HomeWidget.intentdefinition in Sources */,
 				8875EAAD2A3F3B820065FD7F /* HomeWidgetExampleTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -379,8 +400,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				887A1F852A460ADE00DA0B05 /* HomeWidget.swift in Sources */,
 				8875EAB92A3F3B820065FD7F /* HomeWidgetExampleUITestsLaunchTests.swift in Sources */,
 				8875EAB72A3F3B820065FD7F /* HomeWidgetExampleUITests.swift in Sources */,
+				887A1F832A460AD900DA0B05 /* LiveActivityClient.swift in Sources */,
+				887A1F872A460AE100DA0B05 /* HomeWidgetLiveActivity.swift in Sources */,
+				887A1F892A460AE400DA0B05 /* HomeWidget.intentdefinition in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -389,6 +414,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8875EAD52A3F3C880065FD7F /* HomeWidget.swift in Sources */,
+				887A1F792A4608B000DA0B05 /* LiveActivityClient.swift in Sources */,
 				8875EADA2A3F3C890065FD7F /* HomeWidget.intentdefinition in Sources */,
 				8875EAD12A3F3C880065FD7F /* HomeWidgetBundle.swift in Sources */,
 				8875EAD32A3F3C880065FD7F /* HomeWidgetLiveActivity.swift in Sources */,
@@ -541,12 +567,13 @@
 				DEVELOPMENT_ASSET_PATHS = "\"HomeWidgetExample/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSSupportsLiveActivities = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 16;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -571,12 +598,13 @@
 				DEVELOPMENT_ASSET_PATHS = "\"HomeWidgetExample/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSSupportsLiveActivities = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 16;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

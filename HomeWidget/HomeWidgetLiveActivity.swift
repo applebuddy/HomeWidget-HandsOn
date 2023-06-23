@@ -26,6 +26,7 @@ struct HomeWidgetLiveActivity: Widget {
       // Lock screen/banner UI goes here
       VStack {
         Text("Hello")
+        Text("Content State Value : \(context.state.value)")
       }
       .activityBackgroundTint(Color.cyan)
       .activitySystemActionForegroundColor(Color.black)
@@ -35,21 +36,21 @@ struct HomeWidgetLiveActivity: Widget {
         // Expanded UI goes here.  Compose the expanded UI through
         // various regions, like leading/trailing/center/bottom
         DynamicIslandExpandedRegion(.leading) {
-          Text("Leading")
+          Text("Leading \(context.state.value)")
         }
         DynamicIslandExpandedRegion(.trailing) {
-          Text("Trailing")
+          Text("Trailing \(context.state.value)")
         }
         DynamicIslandExpandedRegion(.bottom) {
-          Text("Bottom")
+          Text("Bottom \(context.state.value)")
           // more content
         }
       } compactLeading: {
-        Text("L")
+        Text("L \(context.state.value)")
       } compactTrailing: {
-        Text("T")
+        Text("T \(context.state.value)")
       } minimal: {
-        Text("Min")
+        Text("Min \(context.state.value)")
       }
       .widgetURL(URL(string: "http://www.apple.com"))
       .keylineTint(Color.red)
