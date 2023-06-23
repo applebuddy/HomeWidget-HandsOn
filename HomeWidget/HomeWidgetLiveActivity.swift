@@ -6,8 +6,8 @@
 //
 
 import ActivityKit
-import WidgetKit
 import SwiftUI
+import WidgetKit
 
 // iOS 16.1+
 struct HomeWidgetAttributes: ActivityAttributes {
@@ -17,7 +17,7 @@ struct HomeWidgetAttributes: ActivityAttributes {
   }
   
   // Fixed non-changing properties about your activity go here!
-  var name: String
+  let name: String
 }
 
 struct HomeWidgetLiveActivity: Widget {
@@ -36,13 +36,13 @@ struct HomeWidgetLiveActivity: Widget {
         // Expanded UI goes here.  Compose the expanded UI through
         // various regions, like leading/trailing/center/bottom
         DynamicIslandExpandedRegion(.leading) {
-          Text("Leading \(context.state.value)")
+          Text("Leading \(context.state.value * 2)")
         }
         DynamicIslandExpandedRegion(.trailing) {
-          Text("Trailing \(context.state.value)")
+          Text("Trailing \(context.state.value * 2)")
         }
         DynamicIslandExpandedRegion(.bottom) {
-          Text("Bottom \(context.state.value)")
+          Text("Bottom \(context.state.value * 2)")
           // more content
         }
       } compactLeading: {
@@ -59,7 +59,7 @@ struct HomeWidgetLiveActivity: Widget {
 }
 
 struct HomeWidgetLiveActivity_Previews: PreviewProvider {
-  static let attributes = HomeWidgetAttributes(name: "Me")
+  static let attributes = HomeWidgetAttributes(name: "HomeWidget")
   static let contentState = HomeWidgetAttributes.ContentState(value: 3)
   
   static var previews: some View {

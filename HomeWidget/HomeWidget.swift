@@ -39,7 +39,7 @@ final class APIClient {
     return try await requestData(urlRequest: urlRequest)
   }
 
-  func getMyActiity() async throws -> MyActivity {
+  func getMyActivity() async throws -> MyActivity {
     let url = URL(string: "https://www.boredapi.com/api/activity")!
     var urlRequest = URLRequest(url: url)
     urlRequest.httpMethod = "GET"
@@ -60,7 +60,7 @@ struct Provider: IntentTimelineProvider {
   ) {
     Task {
       do {
-        let myActivity = try await APIClient.shared.getMyActiity()
+        let myActivity = try await APIClient.shared.getMyActivity()
         let entry = SimpleEntry(
           date: Date(),
           configuration: configuration,
@@ -100,7 +100,7 @@ struct Provider: IntentTimelineProvider {
     */
     Task {
       do {
-        let myActivity = try await APIClient.shared.getMyActiity()
+        let myActivity = try await APIClient.shared.getMyActivity()
         let entry = SimpleEntry(
           date: Date(),
           configuration: configuration,
@@ -129,9 +129,24 @@ struct SimpleEntry: TimelineEntry {
 }
 
 struct HomeWidgetEntryView : View {
-  var entry: Provider.Entry
+  @Environment(\.widgetFamily) var family: WidgetFamily
+
+  let entry: Provider.Entry
+
+  init(entry: Provider.Entry) {
+    self.entry = entry
+  }
   
   var body: some View {
+    switch family {
+    case .systemSmall, .systemMedium, .systemLarge, .systemExtraLarge:
+      mainView
+    default:
+      mainView
+    }
+  }
+
+  var mainView: some View {
     VStack {
       Text(entry.date, style: .time)
       if let response = entry.myActivity {

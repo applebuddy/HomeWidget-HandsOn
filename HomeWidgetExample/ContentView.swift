@@ -16,7 +16,7 @@ struct ContentView: View {
         .foregroundColor(.accentColor)
       Text("Hello, world!")
       Button {
-        // 모든 홈위젯을 업데이트 하거나, 일부 id의 widget만 업데이트 할 수 있어요.
+        // 모든 타겟 홈위젯을 업데이트 하거나, 일부 id의 widget만 업데이트 할 수 있어요.
         // WidgetCenter.shared.reloadAllTimelines()
         WidgetCenter.shared.reloadTimelines(ofKind: "HomeWidget")
       } label: {
